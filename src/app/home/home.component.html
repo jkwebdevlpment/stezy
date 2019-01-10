@@ -96,6 +96,41 @@
     </div>
   </div>
 </div>
+<owl-carousel-o [options]="customOptions" (initialized)="getDataA($event)">
+
+  <ng-container *ngFor="let slide of slidesStoreA">
+    <ng-template carouselSlide="1">
+      <img [src]="slide.src" [alt]="slide.alt">
+    </ng-template>
+  </ng-container>
+
+</owl-carousel-o>
+
+
+
+<owl-carousel-o [options]="customOptionsThree" (initialized)="getDataB($event)">
+
+  <ng-container *ngFor="let slide of slidesStoreB">
+    <ng-template carouselSlide="1">
+      <img [src]="slide.src" [alt]="slide.alt">
+    </ng-template>
+  </ng-container>
+
+</owl-carousel-o>
+
+
+
+
+
+<owl-carousel-o [options]="customOptionsThree" (initialized)="getDataC($event)">
+
+  <ng-container *ngFor="let slide of slidesStoreC">
+    <ng-template carouselSlide="1">
+      <img [src]="slide.src" [alt]="slide.alt">
+    </ng-template>
+  </ng-container>
+
+</owl-carousel-o>
 
 
 <app-footer></app-footer>
