@@ -1,5 +1,6 @@
 .footer{
     background:#f3f6fd;
+    padding: 50px 0 10px 0px;
 }
 .company_list, .doc_list li{
     list-style-type: none;

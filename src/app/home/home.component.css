@@ -49,3 +49,43 @@ button.subscribe {
 .latest_update {
     margin-bottom: 24px;
 }
+/* business-section */
+.business_div{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 0;
+    margin: 14px 0;
+}
+.business_div h6{
+    font-weight: 800;
+    margin: 16px 0;
+}
+.business_div p{
+    line-height: .3;
+    font-size: 13px;
+    color: #ccc;
+}
+.heading_div p{
+    font-weight: 600;
+    line-height: .5;
+    font-size: 20px;
+}
+.box_div{
+    padding:30px 0;
+}
+/*end business-section */
+.text{
+    text-align: center;
+}
+section.domains_div {
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+}
+.domains_div p{
+    line-height: .5;
+
+}
+.domains_div h3{
+    margin: 24px 0;
+}
