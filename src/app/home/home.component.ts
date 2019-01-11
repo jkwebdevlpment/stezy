@@ -13,25 +13,13 @@ customOptions: any = {
   mouseDrag: true,
   touchDrag: true,
   pullDrag: true,
-  dots: true,
+  dots: false,
   autoplay: true,
   navSpeed: 700,
   navText: ['', ''],
-  responsive: {
-    0: {
-      items: 1
-    },
-    400: {
-      items: 1
-    },
-    740: {
-      items: 1
-    },
-    940: {
-      items: 1
-    }
-  },
-  nav: true,
+  nav: false,
+  responsive: {0: {items: 1},400: { items: 1},740: {items: 1},940: {items: 1}},
+  
   //autoplaySpeed:1
 }
   customOptionsThree: any = {
@@ -43,20 +31,7 @@ customOptions: any = {
     autoplay: true,
     navSpeed: 700,
     navText: ['', ''],
-    responsive: {
-      0: {
-        items: 2
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 2
-      },
-      940: {
-        items: 3
-      }
-    },
+    responsive: { 0: { items: 2 }, 400: { items: 2 }, 740: { items: 2 }, 940: { items: 3 } },
     nav: true,
     //autoplaySpeed:1
   }
