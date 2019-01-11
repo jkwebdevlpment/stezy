@@ -1,7 +1,29 @@
-
 <app-header></app-header>
-
 <app-banner></app-banner>
+<div class="implement">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="impbox text-center">
+                <img src="../../assets/ideate_bg.png" alt="">
+                <p class="margin_top16">Ideate</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+        <div class="impbox text-center">
+                <img src="../../assets/innovte_bg.png" alt="">
+                <p class="margin_top16">Innovate</p>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="impbox text-center">
+                <img src="../../assets/impl_bg.png" alt="">
+                <p >Implement </p>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
 <div class="container">
   <div class="row">
     <div class="col-md-12 heading_div">
@@ -63,12 +85,12 @@
                   <p>With one click deploy, companies can</p>
                   <p>integrate Blockchain stack using our API</p>
                   <p>into their existing Applications.</p>
+                  <p>Customers</p>
               </div>  
           </div>
     </div>  
   </div>  
 </div>
-
 <section class="domains_div">
   <div class="container">
     <div class="text">
@@ -79,7 +101,54 @@
      </div> 
   </div>  
 </section>  
-
+<div class="patnercontainer">
+<div class="container ">
+        <div class="col-md-12 latest_update">
+            <div class="">
+                <h3>Our Partners</h3>
+                <owl-carousel-o [options]="customOptions" (initialized)="getDataB($event)"> 
+                    <ng-container *ngFor="let slide of slidesStoreB">
+                    <ng-template carouselSlide="1">
+                        <div class="partenrgbox">
+                            <img [src]="slide.src" [alt]="slide.alt">
+                            <!-- <img src="../../../assets/microsoft_img.png" class="img-responsive"/> -->
+                        </div>
+                    </ng-template>
+                </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container margintop">
+    <div class="row">
+        <div class="col-md-12 latest_update">
+            <div class="testimonialcontainer">
+                <h3>What people say about us</h3>
+                <owl-carousel-o [options]="customOptionsThree" (initialized)="getDataC($event)">
+                <ng-container *ngFor="let slide of slidesStoreC">
+                    <ng-template carouselSlide="1">
+                    <div class="testimonialbox">
+                        <div class="testiimgbox">
+                            <img [src]="slide.src" [alt]="slide.alt" />
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="testitestbox">
+                            <p>{{slide.text}}</p>
+                            <p class="peoplename">{{slide.name}}</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="testilogo">
+                            <img src="{{slide.logo}}"/>
+                        </div>
+                    </div>
+                    </ng-template>
+                </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container">
   <div class="row">
     <div class="col-md-12 latest_update">
@@ -96,41 +165,6 @@
     </div>
   </div>
 </div>
-<owl-carousel-o [options]="customOptions" (initialized)="getDataA($event)">
-
-  <ng-container *ngFor="let slide of slidesStoreA">
-    <ng-template carouselSlide="1">
-      <img [src]="slide.src" [alt]="slide.alt">
-    </ng-template>
-  </ng-container>
-
-</owl-carousel-o>
-
-
-
-<owl-carousel-o [options]="customOptionsThree" (initialized)="getDataB($event)">
-
-  <ng-container *ngFor="let slide of slidesStoreB">
-    <ng-template carouselSlide="1">
-      <img [src]="slide.src" [alt]="slide.alt">
-    </ng-template>
-  </ng-container>
-
-</owl-carousel-o>
-
-
-
-
-
-<owl-carousel-o [options]="customOptionsThree" (initialized)="getDataC($event)">
-
-  <ng-container *ngFor="let slide of slidesStoreC">
-    <ng-template carouselSlide="1">
-      <img [src]="slide.src" [alt]="slide.alt">
-    </ng-template>
-  </ng-container>
-
-</owl-carousel-o>
 
 
 <app-footer></app-footer>
