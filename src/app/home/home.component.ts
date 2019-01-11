@@ -18,7 +18,7 @@ customOptions: any = {
   autoplay: true,
   navSpeed: 700,
   navText: ['', ''],
-  nav: true,
+  nav: false,
   responsive: {0: {items: 1},400: { items: 1},740: {items: 3},940: {items: 3}},
   
   //autoplaySpeed:1
