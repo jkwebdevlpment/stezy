@@ -149,6 +149,16 @@
         </div>
     </div>
 </div>
+<section class="try_us">
+  <div class="container">
+    <div class="try_contant">
+      <h3>Try Us.</h3>
+      <h6>You will love Stezy experience.</h6>
+      <p>Start your 30-day free trial.No credit card required.No strings attached.</p>
+      <button class="sign_btn">SIGN UP FOR FREE</button>
+    </div>  
+  </div>  
+</section>  
 <div class="container">
   <div class="row">
     <div class="col-md-12 latest_update">
@@ -165,6 +175,34 @@
     </div>
   </div>
 </div>
-
-
+<div class="container-fluid nopadd">
+    <div class="row">
+      <div class="col-md-12 latest_update">
+        <h3>Get Our latest updates!</h3>
+        <p>Subscribers to our newsletter have been scientifically proven to be smarter,</p>
+        <p>better looking and at least 50% more awesome than average.</p>
+      </div>
+    </div>
+  <owl-carousel-o [options]="customOptionsTwo" (initialized)="getDataA($event)">
+    <ng-container *ngFor="let slide of slidesStoreA">
+      <ng-template carouselSlide="1">
+        <div class="slider_text">
+         <div class="slideimgbox"><img [src]="slide.backgroundimg" [alt]="slide.backgroundimg"></div> 
+          <div class="slidecontent">
+          <h2 class="s_number">{{slide.number}}</h2>
+          <h3 class="trade_heading">{{slide.heading}}</h3>
+          <ul class="trade_list">
+            <li> <img [src]="slide.arrow" class="arrow_bg" alt=""> {{slide.listi}}</li>
+            <li> <img [src]="slide.arrow" class="arrow_bg" alt=""> {{slide.listii}}</li>
+            <li> <img [src]="slide.arrow" class="arrow_bg" alt="">{{slide.listiii}}</li>
+          </ul>
+          <a href="#">{{slide.learmore}}</a>
+          </div>
+        </div>  
+      </ng-template>
+    </ng-container>
+  
+  </owl-carousel-o>
+  
+  </div>
 <app-footer></app-footer>

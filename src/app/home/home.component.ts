@@ -23,6 +23,20 @@ customOptions: any = {
   
   //autoplaySpeed:1
 }
+customOptionsTwo: any = {
+  loop: false,
+  mouseDrag: true,
+  touchDrag: true,
+  pullDrag: true,
+  dots: false,
+  autoplay: true,
+  navSpeed: 700,
+  navText: ['', ''],
+  nav: true,
+  responsive: {0: {items: 1},400: { items: 3},740: {items: 3},940: {items: 3}},
+  
+  //autoplaySpeed:1
+}
   customOptionsThree: any = {
     margin: 30,
     loop: true,
@@ -44,39 +58,62 @@ activeSlidesC: SlidesOutputData;
 slidesStoreA: any[];
 slidesStoreB: any[];
 slidesStoreC: any[];
-
 constructor() {
   this.slidesStoreA = [
-    {
-      name: "dsdfsdfsd",
-      src: "https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    { 
+      backgroundimg: "../../../assets/valuebg1.jpg",
+      number: "01",
+      heading: "Trade Finance", 
+      listi: "Use Blockchain ledger us a single source of truth and allowing access to all authorized parties",
+      listii: "Focus on utilizing smart contracts to manage letters of Credit (LoC) or BoL status",
+      listiii: "Early actions based on smart contract status notification",
+      learmore: "Learn More"
+    },
+    { 
+      backgroundimg: "../../../assets/valuebg2.jpg",
+      number: "02",
+      heading: "Supply Chain",
+      listi: "Create a shared ledger as the single source of truth",
+      listii: "Upload data into the shared ledger  via human or self-managed inputs",
+      listiii: "Upload data into the shared ledger  via human or self-managed inputs",
+      learmore: "Learn More"
     },
     {
-      name: "dsdfsdfsd",
-      src: "https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      logo:"https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      backgroundimg: "../../../assets/valuebg3.jpg",
+      number: "03",
+      heading: "Trade Finance", 
+      listi: "Use Blockchain ledger us a single source of truth and allowing access to all authorized parties",
+      listii: "Focus on utilizing smart contracts to manage letters of Credit (LoC) or BoL status",
+      listiii: "Early actions based on smart contract status notification",
+      learmore: "Learn More"
+    },
+    { 
+      backgroundimg: "../../../assets/valuebg1.jpg",
+      number: "04",
+      heading: "Supply Chain",
+      listi: "Create a shared ledger as the single source of truth",
+      listii: "Upload data into the shared ledger  via human or self-managed inputs",
+      listiii: "Upload data into the shared ledger  via human or self-managed inputs",
+      learmore: "Learn More"
     },
     {
-      name: "dsdfsdfsd",
-      src: "https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      logo: "https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-
-
+      backgroundimg: "../../../assets/valuebg2.jpg",
+      number: "05",
+      heading: "Trade Finance", 
+      listi: "Use Blockchain ledger us a single source of truth and allowing access to all authorized parties",
+      listii: "Focus on utilizing smart contracts to manage letters of Credit (LoC) or BoL status",
+      listiii: "Early actions based on smart contract status notification",
+      learmore: "Learn More"
     },
-    {
-      name: "dsdfsdfsd",
-      src: "https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      logo: "https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-
-
+    { 
+      backgroundimg: "../../../assets/valuebg3.jpg",
+      number: "06",
+      heading: "Supply Chain",
+      listi: "Create a shared ledger as the single source of truth",
+      listii: "Upload data into the shared ledger  via human or self-managed inputs",
+      listiii: "Upload data into the shared ledger  via human or self-managed inputs",
+      learmore: "Learn More"
     },
-    {
-      name: "c",
-      src: "https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      logo: "https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-
-
-    }
   ]
   this.slidesStoreB = [
     {
@@ -90,8 +127,9 @@ constructor() {
     {
       src: "../../../assets/aws.png"
 
-    }
+    },
   ]
+  
   this.slidesStoreC = [
     {
       name: "Carl Jung",
